@@ -1,5 +1,7 @@
 import pygame
 import random
+import time
+
 #model
 class Hero(pygame.sprite.Sprite):
     def __init__(self, name, x, y, img_file):
@@ -24,15 +26,25 @@ class Hero(pygame.sprite.Sprite):
     #methods to make moving our hero easier
     def move_up(self):
         self.rect.y -= self.speed
+
     def move_down(self):
         self.rect.y += self.speed
+
     def move_left(self):
         self.rect.x -= self.speed
+
     def move_right(self):
         self.rect.x += self.speed
 
+    #methods to move the sword back and forth
+    def attack(self):
+        self.image = pygame.image.load("assets/hero_attack.png")
+
+    def reset(self):
+        self.image = pygame.image.load("assets/hero.png")
+
     def fight(self, opponent):
-        if(random.randrange(3)):
+        if (random.randrange(3)):
             self.health -= 1
             print("attack failed. Remaining Health: ", self.health)
             return False
