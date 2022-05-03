@@ -13,15 +13,15 @@ Replace anything surrounded by the `< >` symbols._
  < Describe the unique feature you added >
 
 ## GRACE DAYS
-Grace days used for this assignment: < # >
+Grace days used for this assignment: 0
 
-Grace days remaining: < # >/5
+Grace days remaining: 3/5
 
 ## KNOWN BUGS AND INCOMPLETE PARTS:
- < What parts of the project you were not able to complete >
+NONE
 
 ## REFERENCES:
  < List any outside resources used >
 
 ## MISCELLANEOUS COMMENTS:
- < Anything you would like the grader to know >
+NONE
